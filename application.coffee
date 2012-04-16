@@ -5,6 +5,12 @@ express = require 'express'
 # Create a the application server
 app = express.createServer()
 
+# App configuration
+app.set 'root', __dirname
+app.configure require('./app/config/default')
+app.configure 'development', require('./app/config/development')
+app.configure 'production', require('./app/config/production')
+
 # Default route
 app.get '/', (request, response) ->
     response.send 'Hello World!'
