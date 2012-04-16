@@ -13,7 +13,9 @@ app.configure 'production', require('./app/config/production')
 
 # Default route
 app.get '/', (request, response) ->
-    response.send 'Hello World!'
+    response.render 'index',
+        title: 'Home'
+        thing: 'World'
 
 # Run the application
 app.listen 3000
