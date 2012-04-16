@@ -6,6 +6,9 @@ hulk = require 'hulk-hogan'
 # Application default configuration
 module.exports = ->
     
+    # The port the application should run on
+    @set 'port', 3000
+
     # Register hulk-hogan (mustache) views
     @register '.html', hulk
 

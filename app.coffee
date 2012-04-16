@@ -18,5 +18,6 @@ app.get '/', (request, response) ->
         thing: 'World'
 
 # Run the application
-app.listen 3000
-console.log 'Express server listening on port %d in %s mode', app.address().port, app.settings.env
+app.listen app.set('port')
+console.log 'Server running...'
+console.log '  > Listening on port %d in %s mode', app.address().port, app.settings.env
