@@ -3,7 +3,7 @@
 express = require 'express'
 
 # Create a the application server
-app = express.createServer()
+app = module.exports = express.createServer()
 
 # App configuration
 app.set 'root', __dirname
