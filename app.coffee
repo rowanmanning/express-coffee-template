@@ -6,7 +6,7 @@ express = require 'express'
 app = module.exports = express.createServer()
 
 # App configuration
-app.set 'root', __dirname
+app.set 'baseDir', __dirname
 app.configure require('./app/config/default')
 app.configure 'development', require('./app/config/development')
 app.configure 'production', require('./app/config/production')
