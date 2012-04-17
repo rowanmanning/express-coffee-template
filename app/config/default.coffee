@@ -26,6 +26,9 @@ module.exports = ->
     # Allow parsing of request bodies and '_method' parameters
     @use express.bodyParser()
     @use express.methodOverride()
+
+    # Enable cookies
+    @use express.cookieParser()
     
     # Mount application routes
     @use @router
