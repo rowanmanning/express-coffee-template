@@ -4,6 +4,9 @@ express = require 'express'
 hulk = require 'hulk-hogan'
 
 # Application default configuration
+#
+# This is loaded before either of the
+# environment-specific configurations.
 module.exports = ->
     baseDir = @set 'baseDir'
 
