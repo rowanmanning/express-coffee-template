@@ -2,10 +2,10 @@
 # 'Static' page controller
 module.exports =
 
-    # Index action
+    # Home action
     #
     # Serves the application home page
-    index: (request, response) ->
-        response.render 'index',
-            title: 'Home'
+    home: (request, response) ->
+        response.render 'home',
+            title: 'Welcome!'
             thing: 'World'

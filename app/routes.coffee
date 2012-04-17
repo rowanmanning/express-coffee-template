@@ -3,4 +3,4 @@
 module.exports = ->
 
     # 'Static page' routes
-    @get '/', require('./controllers/static').index
+    @get '/', require('./controllers/static').home
