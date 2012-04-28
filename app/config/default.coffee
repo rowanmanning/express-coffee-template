@@ -1,5 +1,6 @@
 
 # Dependencies
+browserify = require 'browserify'
 express = require 'express'
 hulk = require 'hulk-hogan'
 
@@ -25,6 +26,10 @@ module.exports = ->
 
     # Set the app's public directory
     @use express.static(baseDir + '/public')
+
+    # Set up client-side CoffeeScript compilation with browserify
+    browserScriptBundle = require('browserify')(baseDir + '/client.coffee')
+    @use browserScriptBundle
     
     # Allow parsing of request bodies and '_method' parameters
     @use express.bodyParser()

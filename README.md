@@ -27,7 +27,7 @@ Once you've extracted the template, you have to install all of
 your application's dependencies. From within the top-level
 directory of the application, run `npm install -d`.
 
-Now you can run your application with `coffee app.coffee`.
+Now you can run your application with `coffee server.coffee`.
 
 
 ## Further Documentation ##
