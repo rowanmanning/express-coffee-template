@@ -28,6 +28,10 @@ your application's dependencies. From within the top-level
 directory of the application, run `npm install -d`.
 
 Now you can run your application with `coffee server.coffee`.
+Personally, I get annoyed with having to restart node all the
+time, so I use [nodemon][nodemon] (`npm install -g nodemon` then
+you can use `nodemon server.coffee`) to restart the server every
+time a file is updated.
 
 
 ## Further Documentation ##
@@ -53,6 +57,7 @@ licenses.
 [node]: http://nodejs.org/
 [npm]: http://npmjs.org/
 [dl]: https://github.com/rowanmanning/express-coffee-template/zipball/master
+[nodemon]: https://github.com/remy/nodemon
 [coffee]: http://jashkenas.github.com/coffee-script/
 [express]: http://expressjs.com/
 [hulk]: https://github.com/quangv/hulk-hogan
