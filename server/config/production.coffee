@@ -2,7 +2,7 @@
 # Dependencies
 express = require 'express'
 
-# Application production configuration
+# Server production configuration
 module.exports = ->
     
     # Simple error reporting - should display a 500 page
