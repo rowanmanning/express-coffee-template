@@ -28,7 +28,9 @@ module.exports = ->
     @use express.static(baseDir + '/public')
 
     # Set up client-side CoffeeScript compilation with browserify
-    browserScriptBundle = require('browserify')(baseDir + '/client.coffee')
+    browserScriptBundle = browserify
+        require: baseDir + '/client.coffee'
+        mount: '/script/app.js'
     @use browserScriptBundle
     
     # Allow parsing of request bodies and '_method' parameters
