@@ -30,7 +30,7 @@ module.exports = ->
     # Set up client-side CoffeeScript compilation with browserify
     browserScriptBundle = browserify
         require: baseDir + '/client/bootstrap.coffee'
-        mount: '/script/app.js'
+        mount: '/script/main.js'
     @use browserScriptBundle
     
     # Allow parsing of request bodies and '_method' parameters
