@@ -19,17 +19,17 @@ server = module.exports = express.createServer()
 # which will be used in `server.configure`. `this`
 # in these functions will be `server` which makes
 # for an intuitive way of writing configurations.
-server.set 'baseDir', __dirname
-server.configure require('./server/config/default')
-server.configure 'development', require('./server/config/development')
-server.configure 'production', require('./server/config/production')
+server.set 'baseDir', __dirname + '/..'
+server.configure require('./config/default')
+server.configure 'development', require('./config/development')
+server.configure 'production', require('./config/production')
 
 # Load routes
 #
 # The routes file should export a function which is
 # called here. `this` in the routes function will be
 # `server`.
-require('./server/routes').call server
+require('./routes').call server
 
 # Run the server
 #

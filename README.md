@@ -27,10 +27,11 @@ Once you've extracted the template, you have to install all of
 your application's dependencies. From within the top-level
 directory of the application, run `npm install -d`.
 
-Now you can run your application with `coffee server.coffee`.
-Personally, I get annoyed with having to restart node all the
-time, so I use [nodemon][nodemon] (`npm install -g nodemon` then
-you can use `nodemon server.coffee`) to restart the server every
+Now you can run your application with
+`coffee server/bootstrap.coffee`. Personally, I get annoyed with
+having to restart node all the time, so I use [nodemon][nodemon]
+(`npm install -g nodemon` then you can use
+`nodemon server/bootstrap.coffee`) to restart the server every
 time a file is updated.
 
 
