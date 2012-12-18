@@ -1,10 +1,10 @@
 
 # Express Coffee Template #
 
-An Express + CoffeeScript + Mustache application template for
-Node (aka hipstermatic). This provides a simple basis for an
-application, and helps me skip over the tedious part of
-configuring Express the way I like it.
+An Express + CoffeeScript + Handlebars + LESS application 
+template for Node (aka hipstermatic). This provides a simple 
+basis for an application, and helps me skip over the tedious 
+part of configuring Express the way I like it.
 
 
 ## Requirements ##
@@ -44,9 +44,6 @@ template below:
    in – [docs][coffee]
  * Express, High performance, high class web development for 
    Node.js – [docs][express]
- * (Hulk) Hogan, the library and connector for express – 
-   [Hogan.js][hogan], 
-   [express connector docs][hulk]
 
 
 ## License ##
@@ -57,11 +54,9 @@ licenses.
 
 [node]: http://nodejs.org/
 [npm]: http://npmjs.org/
-[dl]: https://github.com/rowanmanning/express-coffee-template/zipball/master
+[dl]: https://github.com/linusnorton/express-coffee-template/zipball/master
 [nodemon]: https://github.com/remy/nodemon
 [coffee]: http://jashkenas.github.com/coffee-script/
 [express]: http://expressjs.com/
-[hulk]: https://github.com/quangv/hulk-hogan
-[hogan]: http://twitter.github.com/hogan.js/
 [mit]: http://opensource.org/licenses/mit-license.php
 [gpl]: http://opensource.org/licenses/gpl-2.0.php

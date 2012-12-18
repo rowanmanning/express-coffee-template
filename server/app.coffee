@@ -2,12 +2,8 @@
 # Dependencies
 express = require 'express'
 
-# Create a the application server
-#
-# This creates a server and exports it as a module
-# which allows other files to get at the `server`
-# variable if needed.
-server = module.exports = express.createServer()
+# Create the application server
+server = express()
 
 # Server configuration
 #
@@ -38,5 +34,8 @@ require('./routes').call server
 # as possible configurable through the files in
 # ./server/config.
 server.listen server.set('port')
+
 console.log 'Server running...'
-console.log '  > Listening on port %d in %s mode', server.address().port, server.settings.env
+console.log '  > Listening on port %d in %s mode', server.set('port'), server.settings.env
+
+module.exports = server
