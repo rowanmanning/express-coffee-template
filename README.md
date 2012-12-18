@@ -28,12 +28,10 @@ your application's dependencies. From within the top-level
 directory of the application, run `npm install -d`.
 
 Now you can run your application with
-`coffee server/bootstrap.coffee`. Personally, I get annoyed with
+`coffee server/app.coffee`. Personally, I get annoyed with
 having to restart node all the time, so I use [nodemon][nodemon]
-(`npm install -g nodemon` then you can use
-`nodemon server/bootstrap.coffee`) to restart the server every
-time a file is updated.
-
+you can run it using `cake run` and it will watch for changes
+or crashes and restart the server accordingly.
 
 ## Further Documentation ##
 
