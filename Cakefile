@@ -26,11 +26,11 @@ run = ->
     execAsync(BIN + 'nodemon', ['--watch','server/', 'server/app.coffee'])
     
 watch = ->
-	watchLess()
-	watchCoffee()
+    watchLess()
+    watchCoffee()
 
 watchLess = ->
-	execAsync(BIN + 'watch-lessc', ['--watch', '-c', '-i', 'client/style/main.less', '-o', 'public/style/main.css'])
+    execAsync(BIN + 'watch-lessc', ['--watch', '-c', '-i', 'client/style/main.less', '-o', 'public/style/main.css'])
 
 watchCoffee = ->
     execAsync(BIN + 'browserify', ['--watch', '-e', 'client/script/bootstrap.coffee', '-o', 'public/script/main.js'])
