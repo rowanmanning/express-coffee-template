@@ -52,7 +52,7 @@ licenses.
 
 [node]: http://nodejs.org/
 [npm]: http://npmjs.org/
-[dl]: https://github.com/linusnorton/express-coffee-template/zipball/master
+[dl]: https://github.com/rowanmanning/express-coffee-template/zipball/master
 [nodemon]: https://github.com/remy/nodemon
 [coffee]: http://jashkenas.github.com/coffee-script/
 [express]: http://expressjs.com/
