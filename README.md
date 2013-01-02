@@ -1,10 +1,10 @@
 
 # Express Coffee Template #
 
-An Express + CoffeeScript + Mustache application template for
-Node (aka hipstermatic). This provides a simple basis for an
-application, and helps me skip over the tedious part of
-configuring Express the way I like it.
+An Express + CoffeeScript + Handlebars + LESS application 
+template for Node (aka hipstermatic). This provides a simple 
+basis for an application, and helps me skip over the tedious 
+part of configuring Express the way I like it.
 
 
 ## Requirements ##
@@ -28,12 +28,10 @@ your application's dependencies. From within the top-level
 directory of the application, run `npm install -d`.
 
 Now you can run your application with
-`coffee server/bootstrap.coffee`. Personally, I get annoyed with
+`coffee server/app.coffee`. Personally, I get annoyed with
 having to restart node all the time, so I use [nodemon][nodemon]
-(`npm install -g nodemon` then you can use
-`nodemon server/bootstrap.coffee`) to restart the server every
-time a file is updated.
-
+you can run it using `cake run` and it will watch for changes
+or crashes and restart the server accordingly.
 
 ## Further Documentation ##
 
@@ -44,9 +42,6 @@ template below:
    in – [docs][coffee]
  * Express, High performance, high class web development for 
    Node.js – [docs][express]
- * (Hulk) Hogan, the library and connector for express – 
-   [Hogan.js][hogan], 
-   [express connector docs][hulk]
 
 
 ## License ##
@@ -61,7 +56,5 @@ licenses.
 [nodemon]: https://github.com/remy/nodemon
 [coffee]: http://jashkenas.github.com/coffee-script/
 [express]: http://expressjs.com/
-[hulk]: https://github.com/quangv/hulk-hogan
-[hogan]: http://twitter.github.com/hogan.js/
 [mit]: http://opensource.org/licenses/mit-license.php
 [gpl]: http://opensource.org/licenses/gpl-2.0.php
