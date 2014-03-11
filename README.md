@@ -6,6 +6,8 @@ template for Node (aka hipstermatic). This provides a simple
 basis for an application, and helps me skip over the tedious 
 part of configuring Express the way I like it.
 
+**NOTE: This project is no longer being maintained. If you're interested in taking over maintenance of this repo (which is quite a big job), please contact me.**
+
 
 ## Requirements ##
 
